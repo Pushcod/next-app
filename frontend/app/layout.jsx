@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
-//подключение главного файла со стилями
-import "@/app/styles/main.sass";
+import "@/app/styles/main.sass"
 import "./globals.css";
 
 

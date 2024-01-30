@@ -1,18 +1,16 @@
-import React from 'react'
-import styles from '@/app/components/Button/Button.module.sass'
-import Link from 'next/link'
-
+import Styles from "@/app/components/Button/Button.module.sass"
+import Link from "next/link"
 export default function Button(props) {
-    if(props.href){
+    if (props.href){
         return(
-            <Link href={props.href} className={styles.button}>
-                { props.children }
+            <Link href={props.href} className={Styles.button} >
+                {props.children}
             </Link>
         )
     }
-  return (
-    <button className={styles.button}>
-        { props.children }
+return (
+    <button className={Styles.button}>
+            {props.children}
     </button>
   )
 }

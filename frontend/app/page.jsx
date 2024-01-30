@@ -1,24 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Header from "@/app/components/Header/Header";
+import Header from "@/app/components/Header/Header"
 import Button from "./components/Button/Button";
 import Card from "./components/Card/Card";
 import Menu from "./components/Menu/Menu";
-import Link from "next/link";
-
 
 export default function Home() {
   return (
     <main className={styles.main}>
-     
-      <Card cardUrl="/post" title="Мой первый пост" text="Описание моего поста" />
-      <Card cardUrl="/post" title="Мой первый пост2" text="Описание моего поста2" />
-      <Card cardUrl="/post" title="Мой первый пост3" text="Описание моего поста3" />
-      <Card cardUrl="/post" title="Мой первый пост4" text="Описание моего поста4" />
-      <Menu menuUrl1="/post" menuText="Ссылка 1" />
-      <Menu menuUrl2="/post" text2="Ссылка 1" />
-      <Menu menuUrl3="/post" text3="Ссылка 1" />
-
+      <Header />
+      <Menu menuUrl1="/1" linkText1="Ссылка 1" menuUrl2="/2" linkText2="Ссылка 2" menuUrl3="/3" linkText3="Ссылка 3"/>
+      <Card cardUrl="/post1" name="Имя 1" text="lorem2515sdfhd"/>
+      <Card cardUrl="/post2" name="Имя 2" text="lorem2515fhdafh"/>
+      <Card cardUrl="/post3" name="Имя 3" text="lorehdafhadsfham2515"/>
     </main>
   );
 }
